@@ -1,0 +1,19 @@
+/* Custom styles go here */
+body {
+    background-color: #f8f9fa; /* Set a light background color */
+  }
+  
+  .container {
+    background-color: #ffffff; /* Set a white background for the container */
+    border-radius: 8px; /* Add border-radius for rounded corners */
+    box-shadow: 0 0 20px rgba(0, 0, 0, 0.1); /* Add a subtle box shadow */
+    padding: 30px; /* Add padding for content */
+    max-width: 600px; /* Set a maximum width for better readability */
+    margin: 0 auto; /* Center the container */
+  }
+  
+  .btn-primary {
+    background-color: #28a745; /* Set a green color for the primary button */
+    border-color: #28a745; /* Match the border color to the background color */
+  }
+  

@@ -1,0 +1,53 @@
+.topdiv {
+  text-align: center; /* Center text within the container */
+  margin-bottom: 20px; /* Add margin for spacing */
+}
+
+/* Add responsive styles for the button */
+.topdiv button {
+  width: 100%; /* Make the button take up 100% of the width */
+}
+.card {
+    height: 100%; /* Set a fixed height for all cards */
+    margin-bottom: 20px;
+    border: 2px solid;
+    border-radius: 1.2rem;
+    transition: transform 0.5s ease;
+  }
+  .card:hover
+  {
+    transform: scale(1.05);
+    background-color:black;
+    color:white
+  }
+  
+  .card-img-top {
+    object-fit: cover; /* Ensure the image covers the entire card */
+    height: 200px; /* Set a fixed height for the images */
+    border-radius: 1.1rem;
+  }
+  .second-row {
+    margin-top: 20px;
+  }
+  .hotel-name {
+    font-size: 2.5em; /* Adjust the font size as needed */
+    color: #333; /* Set the text color */
+    text-align: center; /* Center align the text */
+    margin-bottom: 20px; /* Add margin to the bottom */
+    text-transform: uppercase; /* Convert text to uppercase */
+    letter-spacing: 2px; /* Add letter spacing for emphasis */
+    font-weight: bold; /* Set font weight to bold */
+    text-shadow: 2px 2px 4px rgba(0, 0, 0, 0.3); /* Add a subtle text shadow */
+    margin-top: 20px;
+  }
+  /* Custom styles go here */
+.quantity-section {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+  }
+  
+  .quantity {
+    margin: 0 10px;
+  }
+  

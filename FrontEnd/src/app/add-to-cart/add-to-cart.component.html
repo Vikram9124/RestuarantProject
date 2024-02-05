@@ -1,0 +1,41 @@
+<div class="table-responsive">
+  
+  <table class="table table-dark table-hover">
+    <thead>
+      <tr>
+        <th scope="col">FoodName</th>
+        <th scope="col">quantity</th>
+        <th scope="col">price</th>
+        <th scope="col">TotalPrice</th>
+      </tr>
+    </thead>
+    <tbody>
+
+        <tr *ngFor="let item of cartItems">
+        <td class="img-with-text"><img [src]="item.image" alt="food Img" width="100" height="100" style="border-radius: 10%;">
+        <span>{{item.name}}</span></td>
+        <td>{{item.quantity}}</td>
+        <td>{{item.price}}</td>
+        <td>{{item.totalprice}}</td>
+      </tr>
+    </tbody>
+    <tfoot>
+      <tr>
+        <!-- Empty cells for the first three columns -->
+        <td></td>
+        <td></td>
+        <td></td>
+        <!-- Display the Grand Total in the last column with styling -->
+        <td style="text-align: center; font-size: larger; font-weight: bold;">Grand Total: {{ calculateGrandTotal() }}</td>
+      </tr>
+    </tfoot>
+   
+  </table>
+  <div class="container">
+    <div class="row">
+      <div class="col-12 col-md-6 offset-md-6">
+        <button class="btn btn-success btn-block mt-3" routerLink="/order">Confirm Order Now</button>
+      </div>
+    </div>
+  </div>
+</div>
